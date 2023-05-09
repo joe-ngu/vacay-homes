@@ -1,13 +1,17 @@
 "use client";
 
 import Container from "../Container";
+import Categories from "./Categories";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
+import { SafeUser } from "@/app/types";
 
-type Props = {};
+type Props = {
+  currentUser?: SafeUser | null;
+};
 
-const Navbar = (props: Props) => {
+const Navbar = ({ currentUser }: Props) => {
   return (
     <div className="fixed w-full bg-white z-10 shadow-sm">
       <div
@@ -29,10 +33,11 @@ const Navbar = (props: Props) => {
           >
             <Logo />
             <Search />
-            <UserMenu />
+            <UserMenu currentUser={currentUser} />
           </div>
         </Container>
       </div>
+      <Categories />
     </div>
   );
 };
