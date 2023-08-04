@@ -5,6 +5,8 @@ import { CldUploadWidget } from "next-cloudinary";
 import { useCallback } from "react";
 import { TbPhotoPlus } from "react-icons/tb";
 
+const imagePreset = "glkfz8yr";
+
 declare global {
   var cloudinary: any;
 }
@@ -25,7 +27,7 @@ const ImageUpload = ({ onChange, value }: Props) => {
   return (
     <CldUploadWidget
       onUpload={handleUpload}
-      uploadPreset="ml_default"
+      uploadPreset={imagePreset}
       options={{
         maxFiles: 1,
       }}
