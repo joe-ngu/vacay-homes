@@ -15,9 +15,12 @@ type Props = {
 };
 
 const ImageUpload = ({ onChange, value }: Props) => {
-  const handleUpload = useCallback((result: any) => {
-    onChange(result.info.secure_url);
-  }, []);
+  const handleUpload = useCallback(
+    (result: any) => {
+      onChange(result.info.secure_url);
+    },
+    [onChange]
+  );
 
   return (
     <CldUploadWidget
