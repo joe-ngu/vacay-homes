@@ -65,7 +65,7 @@ const SearchModal = () => {
 
     const updatedQuery: any = {
       ...currentQuery,
-      location: location?.value,
+      locationValue: location?.value,
       guestCount,
       roomCount,
       bathroomCount,
@@ -136,7 +136,7 @@ const SearchModal = () => {
   );
 
   if (step === STEPS.DATE) {
-    let bodyContent = (
+    bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading
           title="Where do you want to go?"
@@ -151,7 +151,7 @@ const SearchModal = () => {
   }
 
   if (step === STEPS.INFO) {
-    let bodyContent = (
+    bodyContent = (
       <div className="flex flex-col gap-8">
         <Heading title="More information" subtitle="Find your perfect place!" />
         <Counter
