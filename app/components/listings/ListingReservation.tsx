@@ -48,6 +48,10 @@ const ListingReservation = ({
         onChange={(value) => onChangeDate(value.selection)}
       />
       <hr />
+      <div className="p-4">
+        <Button disabled={disabled} label="Reserve" onClick={onSubmit} />
+      </div>
+      <hr />
       <div
         className="
         p-4
@@ -59,9 +63,6 @@ const ListingReservation = ({
         text-lg
       "
       >
-        <div className="p-4">
-          <Button disabled={disabled} label="Reserve" onClick={onSubmit} />
-        </div>
         <div>Total</div>
         <div>$ {totalPrice}</div>
       </div>

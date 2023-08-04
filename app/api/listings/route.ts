@@ -9,6 +9,12 @@ export async function POST(request: Request) {
   if (!currentUser) {
     return NextResponse.error();
   }
+  if (currentUser.id != process.env.ADMIN_USER_ID) {
+    console.log(
+      "Uploading listing has been disabled and is only available for the admin."
+    );
+    return;
+  }
 
   const body = await request.json();
   const {

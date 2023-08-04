@@ -124,7 +124,7 @@ const RentModal = () => {
     }
 
     return "Back";
-  }, []);
+  }, [step]);
 
   let bodyContent = (
     <div className="flex flex-col gap-8">
