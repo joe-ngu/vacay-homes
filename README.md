@@ -12,6 +12,7 @@ Check out the live website at [vacay-homes.vercel.app](https://vacay-homes.verce
 * [![Tailwind CSS][TailwindCSS.com]][Tailwind-url]
 * [![Prisma][Prisma.io]][Prisma-url]
 * [![MongoDB][MongoDB.com]][MongoDB-url]
+* [![Vercel][Vercel.com]][Vercel-url]
 
 ## Installation
 
@@ -92,5 +93,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [Prisma-url]: https://www.prisma.io/
 [MongoDB.com]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
 [MongoDB-url]: https://www.mongodb.com/
+[Vercel.com]: https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
+[Vercel-url]: https://vercel.com/
 
 
